@@ -1,0 +1,314 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matthew J. Hoffman, Ph.D.</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+     <link rel="stylesheet" href="material.deep_orange-indigo.min.css" />
+    <!--link rel="stylesheet" href="material.min.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+	
+	.demo-card-image.mdl-card {
+    height: 100%;
+	width: 100%;
+    background: url('headshot.jpg') center;
+	background-size: cover;
+  }
+    </style>
+    
+    <!-- Font Awesome 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles 
+    <link href="css/style.css" rel="stylesheet"> --> 
+
+  </head>
+ 
+ <body> <!-- class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base"> -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall mdl-color--primary">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title"><h3>Matthew J. Hoffman</h3></span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+         
+          
+           <!-- <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field" />
+            </div>
+          </div> -->
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="pubs.html">Publications</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="media.html">Press/Media</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="data.html">Projects/Data</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            Matthew J. Hoffman
+      </span>
+         
+        </div>
+        
+      </div>
+      
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title"> <img class="android-logo-image" src="rit_logo_trans.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="pubs.html">Publications</a>
+ 		  <a class="mdl-navigation__link" href="media.html">Press/Media</a>
+          <a class="mdl-navigation__link" href="data.html">Projects/Data</a>
+        </nav>
+      </div>
+      
+      <!--<div class="android-content mdl-layout__content">-->
+        
+        
+ <div class="container">
+ <a name="top"></a>
+            <!--First row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2 class="h2-responsive">Press and Media</h2>
+                  <!--      <br>
+                        <p>Powerful and free Material Design UI KIT</p>
+                       <hr>
+                        <p>Register for free and get access to amazing framework and beautiful components</p>
+                        <a target="_blank" href="http://mdbootstrap.com/getting-started/" type="button" class="btn btn-primary btn-stc">Download <i class="fa fa-download right"></i></a>
+                        <a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" type="button" class="btn btn-default btn-ptc">Learn more <i class="fa fa-book right"></i></a> -->
+                    </div>
+                </div>
+            </div>       
+         <!--/.First row-->
+
+            <hr class="extra-margins">
+
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                    <div class="mdl-card mdl-cell mdl-cell--2-col">
+                    <iframe width="204" height="160" src="https://www.youtube.com/embed/aanFq5yP29g" frameborder="0" allowfullscreen></iframe>
+                    <!--    <img class="article-image" src="avg_density_openw_all.png" border="0" alt=""> -->
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">Plastic Pollution in the Great Lakes</h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding">
+                            <p>(December 19, 2016) RIT's press release for my paper (with Eric Hittigner at RIT) that produced the first estimates of plastic pollution entering into and floating in the Great Lakes. We estimate that around 10,000 metric tons of plastic enter the Great Lakes each year and several tons of small plastic particles are floating in the Lakes. A preprint of the paper can be found <a href="docs/Hoffman_plastic_MPB_preprint.pdf">here</a> and video of our simulations can be found under the Projcets/Data tab. Some links to stories and radio interviews about our study are below and an RIT produced video about our work can be seen on the link to the left.</p>
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://www.rit.edu/news/story.php?id=58860">Press Release</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://www.huffingtonpost.com/entry/great-lakes-plastic_us_586502c0e4b0de3a08f73d20">Huffington Post</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://wgnradio.com/2016/12/27/mike-stephen-great-lakes-plastic-pollution-study-by-matthew-hoffman-of-rit-12-27-16/">WGN Radio</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://wxxinews.org/post/study-tons-plastic-getting-great-lakes">WXXI</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://ottawacitizen.com/news/local-news/rochester-scientist-counts-the-plastics-in-great-lakes">Ottawa Citizen</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://weather.com/news/news/great-lakes-plastic-pollution-michigan">weather.com</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://www.duluthnewstribune.com/news/4184733-great-lakes-get-22-million-pounds-plastics-annually">Duluth News Tribune</a>
+                         </div> 
+                    </div>
+                </div>
+                
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                    <div class="mdl-card mdl-cell mdl-cell--2-col">
+                        <img class="article-image" src="http://mediad.publicbroadcasting.net/p/wxxi/files/styles/medium/public/201403/Connections_News_Highlight.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">The Science of Drought</h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding">
+                            <p>(June 6, 2016) WXXI's monthly science roundtable discussion about the science of drought and the role of climate change.</p>
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://wxxinews.org/post/connections-monthly-science-roundtable-science-drought">Listen</a>
+                    </div> 
+                    </div>
+                </div>
+                
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                    <div class="mdl-card mdl-cell mdl-cell--2-col no-bottom-padding">
+                        <img class="article-image" src="https://briankoberlein.com/wp-content/uploads/logo-1.png" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">Sports Statistics</h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding no-bottom-padding">
+                            <p>(October 17, 2015) I joined Brian Koberlein's podcast to discuss the use of advanced statistics in ice hockey and other sports.</p>
+                            
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border no-bottom-padding">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://briankoberlein.com/wp-content/uploads/OUAAT-1.27-Hoffman-Sports-Statistics.mp3">Listen</a>
+                    </div>
+                    </div>
+                </div>                
+                
+                
+<!-- Next Item -->
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                    <div class="mdl-card mdl-cell mdl-cell--2-col no-bottom-padding">
+                        <img class="article-image" src="https://briankoberlein.com/wp-content/uploads/logo-1.png" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">Math as Science/Theory and Law </h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding no-bottom-padding">
+                            <p>(June 20, 2015) Is math a science? Also, what is the difference between a theory and a law? I was on Brian Koberlein's podcast to discuss these questions.</p>
+                            
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border no-bottom-padding">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://briankoberlein.com/wp-content/uploads/OUAAT-1.15-Hoffman-Is-Math-a-Science.mp3">Listen</a>
+                    </div>
+                    </div>
+                </div>        
+                
+<!-- Next Item -->
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                    <div class="mdl-card mdl-cell mdl-cell--2-col no-bottom-padding">
+                        <img class="article-image" src="https://briankoberlein.com/wp-content/uploads/logo-1.png" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">Great Pacific Garbage Patch/Age of the Universe </h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding no-bottom-padding">
+                            <p>(March 14, 2015) I was a guest on the podcast One Universe at a Time to discuss plastic pollution in the global oceand and how astronomers determine the age of the universe.</p>
+                            
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border no-bottom-padding">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://briankoberlein.com/wp-content/uploads/OUAAT-1.1-Hoffman-Garbage-Patch.mp3">Listen</a>
+                    </div>
+                    </div>
+                </div>         
+                
+<!-- Next Item -->
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                    <div class="mdl-card mdl-cell mdl-cell--2-col no-bottom-padding">
+                        <img class="article-image" src="pie.jpeg" border="0" alt="">
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">PiRIT Pi Day Pie Contest</h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding no-bottom-padding">
+                            <p>(March 13, 2015) RIT news covered the Pi Day Pie Baking contest run by the RIT Math Club (PiRIT), which I advise. They highlight my pie that year and the 2015 edition is shown on the image onthe left. Full disclosure: neither pie won. </p>
+                            
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border no-bottom-padding">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://youtu.be/vZUZybmTF50">Watch</a>
+                    </div>
+                    </div>
+                </div>                                 
+                
+  
+<!-- Next Item -->
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                    <div class="mdl-card mdl-cell mdl-cell--2-col no-bottom-padding">
+                        <iframe width="204" height="160" src="https://www.youtube.com/embed/QM5UoH9QYgA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">Math at RIT</h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding no-bottom-padding">
+                            <p>(June 10, 2014) This video about the applied and computational math program at RIT has segments of me in front of a class as well as discussing student research. </p>
+                            
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border no-bottom-padding">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://youtu.be/QM5UoH9QYgA">Watch</a>
+                    </div>
+                    </div>
+                </div>            
+  
+          <div class="mdl-mega-footer--bottom-section">
+          <p class="mdl-typography--font-light"> pie photo by A. Sue Weisler</p>
+           <p class="mdl-typography--font-light"> © 2019 Matthew J. Hoffman, All Rights Reserved</p>
+           
+           
+          </div>
+      <!--      <div class="mdl-logo">
+              More Information
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+            </ul>
+          </div> -->
+        </footer> 
+ 
+    </div>
+  <a href="mailto:mjhsma@rit.edu" id="view-source" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent"> <i class="material-icons">email</i></a>  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89324806-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

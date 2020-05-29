@@ -1,0 +1,226 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matthew J. Hoffman, Ph.D.</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+     <link rel="stylesheet" href="material.deep_orange-indigo.min.css" />
+    <!--link rel="stylesheet" href="material.min.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+	
+	.demo-card-image.mdl-card {
+    height: 100%;
+	width: 100%;
+    background: url('headshot.jpg') center;
+	background-size: cover;
+  }
+    </style>
+    
+    <!-- Font Awesome 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles 
+    <link href="css/style.css" rel="stylesheet"> --> 
+
+  </head>
+ 
+ <body> <!-- class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base"> -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall mdl-color--primary">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title"><h3>Matthew J. Hoffman</h3></span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+         
+          
+           <!-- <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field" />
+            </div>
+          </div> -->
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="pubs.html">Publications</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="media.html">Press/Media</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="data.html">Data/Downloads</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            Matthew J. Hoffman
+      </span>
+         
+        </div>
+        
+      </div>
+      
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title"> <img class="android-logo-image" src="rit_logo_trans.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Home</a>
+          <a class="mdl-navigation__link" href="pubs.html">Publications</a>
+          <a class="mdl-navigation__link" href="media.html">Press/Media</a>
+          <a class="mdl-navigation__link" href="data.html">Data/Downloads</a>
+        </nav>
+      </div>
+      
+      <!--<div class="android-content mdl-layout__content">-->
+        
+        
+ <div class="container">
+ <a name="top"></a>
+            <!--First row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2 class="h2-responsive">Data/Products</h2>
+                  <!--      <br>
+                        <p>Powerful and free Material Design UI KIT</p>
+                       <hr>
+                        <p>Register for free and get access to amazing framework and beautiful components</p>
+                        <a target="_blank" href="http://mdbootstrap.com/getting-started/" type="button" class="btn btn-primary btn-stc">Download <i class="fa fa-download right"></i></a>
+                        <a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" type="button" class="btn btn-default btn-ptc">Learn more <i class="fa fa-book right"></i></a> -->
+                    </div>
+                </div>
+            </div>       
+         <!--/.First row-->
+
+            <hr class="extra-margins">
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                  <!--  <div class="mdl-card mdl-cell mdl-cell--2-col">
+                        <img class="article-image" src="https://scontent.xx.fbcdn.net/v/t1.0-1/p160x160/11822380_489112501262647_6834962305408570066_n.jpg?oh=f936af3c5e47cacf7493d083a3015ee4&oe=57CB4180" border="0" alt="">
+                    </div> -->
+                
+                    <div class="mdl-cell mdl-cell--12-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">Simulating Transport of Plastic Pollution in the Great Lakes</h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding">
+                            <p>(2016) Using currents from NOAA's operational forecast models, we simulated the input and transport of plastic pollution through the Great Lakes. This was the first attempt as a budget for the full Great Lakes system and the first estimates of both input and floating mass of plastic. 
+
+<p>Here is video of simulated plastic particles entering and moving through Lake Erie in the simulation of the year 2009:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VrySaUqbtV4" frameborder="0" allowfullscreen></iframe></p>
+
+<p> Notice how the particles are often pushed along the bottom shore of the Lake but the currents, which leads to higher concentrations along the US coast of Lake Erie. Lake Erie has some gyre structure in its average currents and particles can be seen clustering at certain points in the video, but strong wind events disrupt this pattern and prevent the accumulation of plastic in "garbage patches" as in seen in the oceans.</p>
+
+<p>Here is another video showing simulated plastic particles entering and moving through Lake Michigan, also in 2009:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W1_8EjafAew" frameborder="0" allowfullscreen></iframe></p>
+
+<p>If using results from this study please cite the following paper: M.J. Hoffman and E. Hittinger. 2016. Inventory and transport of plastic debris in the Laurentian Great Lakes. Marine Pollution Bulletin. In Press.</p>
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="">Press Release</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="docs/Hoffman_plastic_MPB_preprint.pdf">Preprint</a>
+                    </div> 
+                    </div>
+                </div>
+
+<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp no-bottom-padding">
+                  <!--  <div class="mdl-card mdl-cell mdl-cell--2-col">
+                        <img class="article-image" src="https://scontent.xx.fbcdn.net/v/t1.0-1/p160x160/11822380_489112501262647_6834962305408570066_n.jpg?oh=f936af3c5e47cacf7493d083a3015ee4&oe=57CB4180" border="0" alt="">
+                    </div> -->
+                
+                    <div class="mdl-cell mdl-cell--12-col no-bottom-padding">
+                        <h2 class="mdl-card__title-text">Simulated Hyperspectral Aerial Video Dataset</h2>
+
+                        <div class="mdl-card__supporting-text no-left-padding">
+                            <p>(2016) DIRSIG simulated aerial video from a moving platform with moving vehicles. The hyperspectral frames can be downloaded along with the ground truth files for the vehicles. More information on the dataset and our work with it can be found <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w29/html/Uzkent_Real-Time_Vehicle_Tracking_CVPR_2016_paper.html">here</a> (citation below). </p>
+                            
+<p>If using this for reserach, please cite the following paper: Uzkent, B., M.J. Hoffman, and A. Vodacek, 2016. Real-time Vehicle Tracking in Aerial Video using Hyperspectral Features, The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshop: Moving Cameras Meet Video Surveillance, June 2016.</p>
+
+<p>Here is video of the scene:
+<iframe width="420" height="315" src="https://www.youtube.com/embed/-1-9WZH0Ki4" frameborder="0" allowfullscreen></iframe></p>
+
+<p>Thanks for the Air Force Office of Scientific Research for supporting this work through the Dynamic Data Driven Application Systems program under grant number FA9550-15-1-0093.</p>
+                        </div>
+                         <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://drive.google.com/file/d/0B3lpS7qMFUmwTUQwaUpiOVN2SDA/view">Hyperspectral Frames (142 GB)</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://drive.google.com/file/d/0B3lpS7qMFUmwTUQwaUpiOVN2SDA/view">Readme and Ground Truth (112 KB)</a>
+                    </div> 
+                    </div>
+                </div>
+ 
+                        
+          <div class="mdl-mega-footer--bottom-section">
+        <!--  <p class="mdl-typography--font-light"> pie photo by A. Sue Weisler</p> -->
+           <p class="mdl-typography--font-light"> © 2016 Matthew J. Hoffman, All Rights Reserved</p>
+           
+           
+          </div>
+      <!--      <div class="mdl-logo">
+              More Information
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+            </ul>
+          </div> -->
+        </footer> 
+ 
+    </div>
+  <a href="mailto:mjhsma@rit.edu" id="view-source" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent"> <i class="material-icons">email</i></a>  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+</body>
+</html>
