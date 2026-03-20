@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects and Data — Matthew J. Hoffman, RIT">
+  <title>Projects — Matthew J. Hoffman</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__name">Matthew J. Hoffman</div>
+    <div class="site-header__title">Professor &nbsp;·&nbsp; School of Mathematics &amp; Statistics &nbsp;·&nbsp; Rochester Institute of Technology</div>
+  </header>
+
+  <div class="orange-rule"></div>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pubs.html">Pubs</a>
+      <a href="press.html">Press</a>
+      <a href="projects.html" class="active">Projects</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-content">
+      <h1 class="page-title">Projects &amp; Data</h1>
+
+      <!-- Semi-Supervised Hyperspectral Object Detection Challenge -->
+      <div class="project-card">
+        <div class="project-card__tag">2022 &nbsp;·&nbsp; Remote Sensing</div>
+        <h2>Semi-Supervised Hyperspectral Object Detection Challenge</h2>
+        <p>Semi-supervised learning has developed into a highly researched problem as it minimizes labeling costs while achieving performance comparable to fully labeled datasets. As part of the <a href="https://pbvs-workshop.github.io/index.html" target="_blank" rel="noopener">Perception Beyond the Visible Spectrum workshop</a> at <a href="https://cvpr2022.thecvf.com/" target="_blank" rel="noopener">CVPR 2022</a>, we organized a semi-supervised learning challenge with 10% labeled data across three moving object categories: vehicles, bus, and bike.</p>
+        <p>The dataset (RooftopAI) is a hyperspectral vehicle detection dataset collected from the roof of the Chester F. Carlson building at RIT. The bounding boxes were labelled by Aneesh Rangnekar. A paper describing the sensor can be found <a href="https://www.mdpi.com/2313-433X/5/1/6/htm" target="_blank" rel="noopener">here</a>, and the challenge results paper <a href="https://openaccess.thecvf.com/content/CVPR2022W/PBVS/papers/Rangnekar_Semi-Supervised_Hyperspectral_Object_Detection_Challenge_Results_-_PBVS_2022_CVPRW_2022_paper.pdf" target="_blank" rel="noopener">here</a>.</p>
+        <p>Thanks to the Air Force Office of Scientific Research for supporting this work through the DDDAS program.</p>
+        <div class="project-card__actions">
+          <a href="https://sites.google.com/g.rit.edu/sshodc-pbvs-2022" target="_blank" rel="noopener" class="btn btn--filled">Challenge &amp; Data ↗</a>
+        </div>
+      </div>
+
+      <!-- AeroRIT -->
+      <div class="project-card">
+        <div class="project-card__tag">2020 &nbsp;·&nbsp; Hyperspectral Imaging</div>
+        <h2>AeroRIT</h2>
+        <p>AeroRIT is a semantic segmentation dataset collected with a hyperspectral sensor over the Rochester Institute of Technology campus. The scene was captured from a Headwall Photonics Micro Hyperspec E-Series CMOS sensor at an altitude of approximately 5,000 feet (0.4m GSD). Semantic map pixels were labelled by Aneesh Rangnekar using individual hyperspectral signatures and geo-registered RGB images as references.</p>
+        <img src="image_rgb.jpg" alt="AeroRIT RGB image of RIT campus" style="max-width:675px;">
+        <p>If using results from this study, please cite: Rangnekar, A., Mokashi, N., Ientilucci, E. J., Kanan, C., &amp; Hoffman, M. J. (2020). AeroRIT: A New Scene for Hyperspectral Image Analysis. <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 58(11), 8116–8124. doi:10.1109/TGRS.2020.2987199</p>
+        <p>Thanks to the Air Force Office of Scientific Research for supporting this work through the DDDAS program.</p>
+        <div class="project-card__actions">
+          <a href="https://github.com/aneesh3108/AeroRIT" target="_blank" rel="noopener" class="btn btn--filled">Data ↗</a>
+          <a href="https://ieeexplore.ieee.org/document/9079478" target="_blank" rel="noopener" class="btn btn--outline">Paper ↗</a>
+        </div>
+      </div>
+
+      <!-- Simulating Fate and Transport of Plastic Pollution -->
+      <div class="project-card">
+        <div class="project-card__tag">2016–Present &nbsp;·&nbsp; Great Lakes</div>
+        <h2>Simulating Fate and Transport of Plastic Pollution</h2>
+        <p>Most of my work here has been on freshwater systems, particularly the Laurentian Great Lakes. Using currents from NOAA's operational forecast models, we simulated the input and transport of plastic pollution through the Great Lakes. This was the first attempt at a full-system budget and the first estimates of both input and floating mass of plastic.</p>
+        <p>Our initial work focused on surface currents; in recent years we've extended to transport in the water column and deposition on the lake bottom. In 2020, along with Ph.D. student Juliette Daily, we <a href="https://www.sciencedirect.com/science/article/abs/pii/S0025326X20301429" target="_blank" rel="noopener">published</a> the first full water-column and deposition mass estimates in the Great Lakes or any body of water. We are currently modeling biofouling and beaching/deposition in collaboration with <a href="https://christytyler.weebly.com/" target="_blank" rel="noopener">Christy Tyler</a>, <a href="https://www.rit.edu/directory/ncesch-nathan-eddingsaas" target="_blank" rel="noopener">Nathan Eddingsaas</a>, <a href="https://people.rit.edu/aohsbi/" target="_blank" rel="noopener">Andre Hudson</a>, and <a href="https://people.rit.edu/~swdeme/index.html" target="_blank" rel="noopener">Steven Day</a>. Supported by NOAA/NY SeaGrant.</p>
+        <p>Simulated plastic particles entering and moving through Lake Erie (2009):</p>
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/VrySaUqbtV4"
+                frameborder="0" allowfullscreen
+                title="Lake Erie plastic pollution simulation"></iframe>
+        <p>Notice how particles accumulate along the US shore driven by prevailing currents. Strong wind events disrupt gyre-based clustering, preventing the "garbage patches" seen in the open ocean.</p>
+        <p>Simulated plastic particles entering and moving through Lake Michigan (2009):</p>
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/W1_8EjafAew"
+                frameborder="0" allowfullscreen
+                title="Lake Michigan plastic pollution simulation"></iframe>
+        <p>If using results from this study, please cite: M.J. Hoffman and E. Hittinger. 2016. Inventory and transport of plastic debris in the Laurentian Great Lakes. <em>Marine Pollution Bulletin</em>.</p>
+        <div class="project-card__actions">
+          <a href="http://www.rit.edu/news/story.php?id=58860" target="_blank" rel="noopener" class="btn btn--outline">Press Release</a>
+          <a href="docs/Hoffman_plastic_MPB_preprint.pdf" target="_blank" rel="noopener" class="btn btn--outline">Preprint</a>
+        </div>
+      </div>
+
+      <!-- Simulated Hyperspectral Aerial Video Dataset -->
+      <div class="project-card">
+        <div class="project-card__tag">2016–Present &nbsp;·&nbsp; Vehicle Tracking</div>
+        <h2>Simulated Hyperspectral Aerial Video Dataset</h2>
+        <p>DIRSIG simulated aerial video from a moving platform with moving vehicles. Hyperspectral frames can be downloaded along with ground truth files for the vehicles. More information on the dataset and our work with it can be found <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w29/html/Uzkent_Real-Time_Vehicle_Tracking_CVPR_2016_paper.html" target="_blank" rel="noopener">here</a>.</p>
+        <p>If using this data, please cite: Uzkent, B., M.J. Hoffman, and A. Vodacek. 2016. Real-time Vehicle Tracking in Aerial Video using Hyperspectral Features. <em>CVPR Workshop: Moving Cameras Meet Video Surveillance</em>, June 2016.</p>
+        <p>Video of the scene:</p>
+        <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/-1-9WZH0Ki4"
+                frameborder="0" allowfullscreen
+                title="Simulated hyperspectral aerial video scene"></iframe>
+        <p>Thanks to the Air Force Office of Scientific Research for supporting this work through the DDDAS program under grant FA9550-15-1-0093.</p>
+        <div class="project-card__actions">
+          <a href="https://drive.google.com/file/d/0B3lpS7qMFUmwTUQwaUpiOVN2SDA/view" target="_blank" rel="noopener" class="btn btn--outline">Hyperspectral Frames (142 GB)</a>
+          <a href="https://drive.google.com/file/d/0B3lpS7qMFUmwTUQwaUpiOVN2SDA/view" target="_blank" rel="noopener" class="btn btn--outline">Readme &amp; Ground Truth (112 KB)</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Matthew J. Hoffman &nbsp;&middot;&nbsp; All Rights Reserved &nbsp;&middot;&nbsp;
+       <a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a></p>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('nav-toggle');
+      var links = document.getElementById('nav-links');
+      btn.addEventListener('click', function () {
+        var open = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+    })();
+  </script>
+</body>
+</html>
