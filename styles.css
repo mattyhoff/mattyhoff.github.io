@@ -311,6 +311,29 @@ main { flex: 1; }
   padding: 40px 24px 56px;
 }
 
+/* Prose spacing for pages with bare paragraphs (e.g. About);
+   the global reset above zeroes p/ul margins. Direct-child
+   selectors keep this from reaching text inside cards. */
+.page-content > p {
+  margin-bottom: 18px;
+  max-width: 72ch;
+}
+
+.page-content > ul {
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+
+.page-content > ul li {
+  margin-bottom: 6px;
+}
+
+.page-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .page-title {
   font-family: var(--display-font);
   font-size: clamp(22px, 3vw, 28px);
