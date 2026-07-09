@@ -224,6 +224,34 @@ main { flex: 1; }
   display: block;
 }
 
+/* Selected publications on the homepage */
+.home-pubs-wrap {
+  background: var(--rit-white);
+  border-top: 0.5px solid var(--rit-cool-gray-1);
+}
+
+.home-pubs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 36px 44px;
+}
+
+.pub-list--selected {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-note {
+  display: block;
+  font-family: var(--body-font);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--rit-cool-gray-5);
+  margin-top: 3px;
+}
+
+.home-pubs__more { margin-top: 20px; }
+
 /* Bottom strip */
 .home-strip-wrap {
   background: #f5f4f1;
