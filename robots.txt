@@ -1,0 +1,13 @@
+User-agent: *
+# Keep crawlers focused on the current site; these folders hold legacy
+# versions of the site with duplicate/outdated content.
+Disallow: /old/
+Disallow: /Material/
+Disallow: /Misc/
+Disallow: /imagine/
+Disallow: /docs/index.html
+Disallow: /docs/media.html
+Disallow: /docs/data.html
+Disallow: /docs/Celtic.html
+
+Sitemap: https://www.matthewjhoffman.com/sitemap.xml
