@@ -1,10 +1,5 @@
 User-agent: *
-# Keep crawlers focused on the current site; these folders hold legacy
-# versions of the site with duplicate/outdated content.
-Disallow: /old/
-Disallow: /Material/
-Disallow: /Misc/
-Disallow: /imagine/
+# Legacy duplicate pages kept alongside the CV and preprint PDFs in /docs/.
 Disallow: /docs/index.html
 Disallow: /docs/media.html
 Disallow: /docs/data.html
