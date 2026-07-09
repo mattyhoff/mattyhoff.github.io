@@ -207,6 +207,9 @@ main { flex: 1; }
 .contact-row .v { color: #222; }
 .contact-row a { color: var(--rit-cyan); text-decoration: none; }
 .contact-row a:hover { color: var(--rit-orange); }
+/* Buttons inside the contact block keep button colors, not link colors */
+.contact-row a.btn--outline { color: var(--rit-orange); }
+.contact-row a.btn--outline:hover { color: #fff; }
 
 .home-hero__photo {
   overflow: hidden;
