@@ -233,7 +233,7 @@ main { flex: 1; }
 }
 
 .research-block__fig {
-  flex: 0 0 340px;
+  flex: 0 0 260px;
   margin: 0;
 }
 
@@ -283,7 +283,7 @@ main { flex: 1; }
 
 @media (max-width: 720px) {
   .research-block { flex-direction: column; }
-  .research-block__fig { flex-basis: auto; width: 100%; max-width: 420px; }
+  .research-block__fig { flex-basis: auto; width: 100%; max-width: 300px; }
 }
 
 /* Selected publications on the homepage */
