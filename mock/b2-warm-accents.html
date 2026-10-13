@@ -41,7 +41,10 @@
 
     .hero-wrap { background: #fff; border-bottom: 1px solid var(--line); }
     .hero { display: grid; grid-template-columns: 1fr 0.9fr; gap: 56px; align-items: center; padding-top: 64px; padding-bottom: 64px; }
-    h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 3.2vw, 38px); line-height: 1.25; color: var(--ink); margin-bottom: 22px; }
+    h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 3.8vw, 46px); line-height: 1.15; color: var(--ink); margin-bottom: 14px; }
+    .topics { font-size: 16px; color: var(--muted); margin-bottom: 24px; }
+    .topics span { display: inline-block; white-space: nowrap; }
+    .topics span:not(:last-child)::after { content: "·"; margin: 0 10px; color: var(--muted); }
     .lede { font-size: 17px; line-height: 1.7; color: var(--text); margin-bottom: 30px; max-width: 36em; }
     .contact { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; font-size: 15px; margin-bottom: 30px; }
     .contact dt { color: var(--muted); }
@@ -123,7 +126,8 @@
     <div class="hero-wrap">
       <div class="wrap hero">
         <div>
-          <h1>Mathematical modeling of the fate and transport of plastic pollution, hydrodynamics, and data assimilation</h1>
+          <h1>Mathematical modeling of the environment</h1>
+          <p class="topics"><span>Plastic pollution fate and transport</span><span>Hydrodynamics</span><span>Data assimilation</span></p>
           <p class="lede">I build mathematical models to understand where plastic pollution goes in lakes and oceans, and develop data-assimilation methods that blend those models with observations. The same tools reach into lake and ocean hydrodynamics, hyperspectral remote sensing, and the electrical dynamics of the heart.</p>
           <dl class="contact">
             <dt>Email</dt><dd><a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a></dd>
