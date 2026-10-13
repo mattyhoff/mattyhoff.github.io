@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Mock B2: Warm academic with accent rules — Matthew J. Hoffman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+  <style>
+    :root {
+      --orange: #F76902;
+      --accent: #00778F;
+      --accent-tint: #E3F2F5;
+      --ink: #1a1a1a;
+      --text: #33302c;
+      --muted: #67615a;
+      --page: #FAF9F6;
+      --warm: #F1EEE9;
+      --line: #E2DDD5;
+      --sans: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--sans); color: var(--text); background: var(--page); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+
+    .mock-flag { background: var(--warm); color: var(--muted); font-size: 13px; text-align: center; padding: 6px; }
+
+    header { background: #fff; border-bottom: 1px solid var(--line); }
+    .bar { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 22px 0 18px; flex-wrap: wrap; }
+    .name { font-family: var(--serif); font-size: 24px; color: var(--ink); text-decoration: none; }
+    .name:hover { text-decoration: none; }
+    .role { font-size: 13.5px; color: var(--muted); margin-left: 14px; }
+    nav { display: flex; gap: 26px; flex-wrap: wrap; }
+    nav a { font-size: 15px; color: var(--text); padding-bottom: 4px; border-bottom: 2px solid transparent; }
+    nav a:hover { text-decoration: none; color: var(--ink); border-bottom-color: var(--line); }
+    nav a.active { color: var(--ink); border-bottom-color: var(--orange); }
+
+    .hero-wrap { background: #fff; border-bottom: 1px solid var(--line); }
+    .hero { display: grid; grid-template-columns: 1fr 0.9fr; gap: 56px; align-items: center; padding-top: 64px; padding-bottom: 64px; }
+    h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 3.2vw, 38px); line-height: 1.25; color: var(--ink); margin-bottom: 22px; }
+    .lede { font-size: 17px; line-height: 1.7; color: var(--text); margin-bottom: 30px; max-width: 36em; }
+    .contact { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; font-size: 15px; margin-bottom: 30px; }
+    .contact dt { color: var(--muted); }
+    .contact dd { color: var(--ink); }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn { display: inline-block; font-size: 15px; font-weight: 500; padding: 10px 20px; border-radius: 6px; border: 1px solid var(--accent); color: var(--accent); }
+    .btn:hover { text-decoration: none; background: var(--accent-tint); }
+    .btn--solid { background: var(--accent); color: #fff; }
+    .btn--solid:hover { background: #00627A; }
+    .photo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; border-radius: 12px; display: block; }
+
+    section { padding: 64px 0; }
+    .sec-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 28px; gap: 16px; flex-wrap: wrap; }
+    h2 { font-family: var(--serif); font-weight: 400; font-size: 26px; color: var(--ink); }
+    .sec-head a { font-size: 15px; }
+
+    .themes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+    .card::before { content: ""; display: block; height: 4px; background: var(--rule, var(--line)); }
+    .card.t1 { --rule: #009CBD; }
+    .card.t2 { --rule: #7D55C7; }
+    .card.t3 { --rule: #F6BE00; }
+    .card .fig { aspect-ratio: 16 / 10; background: var(--warm); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .card .fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card .fig svg { width: 80%; height: auto; }
+    .card .body { padding: 20px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+    .card h3 { font-size: 18px; font-weight: 500; color: var(--ink); margin-bottom: 8px; line-height: 1.35; }
+    .card p { font-size: 15px; line-height: 1.65; color: var(--text); flex: 1; margin-bottom: 14px; }
+    .card .more { font-size: 15px; font-weight: 500; }
+
+    .pubs-wrap { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .pubs { list-style: none; }
+    .pubs li { padding: 22px 0; border-top: 1px solid var(--line); }
+    .pubs li:first-child { border-top: none; padding-top: 0; }
+    .ptitle { font-family: var(--serif); font-size: 19px; line-height: 1.4; color: var(--ink); margin-bottom: 6px; }
+    .ptitle a { color: var(--ink); }
+    .ptitle a:hover { color: var(--accent); }
+    .meta { font-size: 14.5px; color: var(--muted); margin-bottom: 8px; }
+    .meta strong { color: var(--ink); font-weight: 500; }
+    .note { font-size: 15.5px; line-height: 1.65; color: var(--text); max-width: 48em; }
+
+    .collab { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .collab a { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: flex; align-items: center; justify-content: center; min-height: 104px; }
+    .collab a:hover { border-color: var(--accent); }
+    .collab img { max-height: 60px; max-width: 100%; }
+
+    footer { background: #1c1b19; color: #CFCAC2; padding: 40px 0 48px; font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    footer a { color: #fff; }
+    footer .fname { font-family: var(--serif); font-size: 18px; color: #fff; margin-bottom: 6px; }
+
+    @media (max-width: 860px) {
+      .wrap { padding: 0 20px; }
+      .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 36px; padding-bottom: 48px; }
+      .photo { order: -1; }
+      .photo img { aspect-ratio: 4 / 3; }
+      .themes, .collab { grid-template-columns: 1fr; }
+      .role { display: block; margin: 4px 0 0; }
+      nav { gap: 14px; }
+      nav a { font-size: 14px; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mock-flag">Design mock B2: Warm academic with accent rules. Not the live site. <a href="index.html">Compare all mocks</a></div>
+
+  <header>
+    <div class="wrap bar">
+      <div><a class="name" href="../index.html">Matthew J. Hoffman</a><span class="role">Professor of Applied Mathematics, RIT</span></div>
+      <nav aria-label="Primary">
+        <a href="b2-warm-accents.html" class="active">Home</a><a href="../about.html">About</a><a href="../research.html">Research</a><a href="../pubs.html">Publications</a><a href="../press.html">Press</a><a href="../docs/mhoffman-cv.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-wrap">
+      <div class="wrap hero">
+        <div>
+          <h1>Mathematical modeling of the fate and transport of plastic pollution, hydrodynamics, and data assimilation</h1>
+          <p class="lede">I build mathematical models to understand where plastic pollution goes in lakes and oceans, and develop data-assimilation methods that blend those models with observations. The same tools reach into lake and ocean hydrodynamics, hyperspectral remote sensing, and the electrical dynamics of the heart.</p>
+          <dl class="contact">
+            <dt>Email</dt><dd><a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a></dd>
+            <dt>Phone</dt><dd>(585) 475-4209</dd>
+            <dt>Office</dt><dd>2302 Gosnell Hall, School of Mathematics and Statistics</dd>
+          </dl>
+          <div class="actions">
+            <a class="btn btn--solid" href="../research.html">Research</a>
+            <a class="btn" href="../docs/mhoffman-cv.pdf">Curriculum vitae</a>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="../20250203_TLW_MattHoffman_4727.jpg" alt="Matthew J. Hoffman standing in front of a world map showing plastic pollution data">
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="sec-head"><h2>Research</h2><a href="../research.html">All research</a></div>
+        <div class="themes">
+          <article class="card t1">
+            <div class="fig"><img src="../avg_density_openw_all.png" alt="Simulated plastic accumulation across the Great Lakes"></div>
+            <div class="body">
+              <h3>Plastic pollution: fate and transport</h3>
+              <p>Particle-transport models driven by lake and ocean currents estimate where plastic goes, from the first full budget for the Great Lakes to global marine reservoirs.</p>
+              <a class="more" href="../research.html">Read more</a>
+            </div>
+          </article>
+          <article class="card t2">
+            <div class="fig" aria-hidden="true">
+              <svg viewBox="0 0 320 200" fill="none" stroke-linecap="round">
+                <path d="M10 120 C 60 60, 110 160, 160 100 S 260 60, 310 110" stroke="#CDBFEA" stroke-width="2"/>
+                <path d="M10 110 C 60 70, 110 150, 160 95 S 260 70, 310 100" stroke="#CDBFEA" stroke-width="2"/>
+                <path d="M10 130 C 60 55, 110 170, 160 108 S 260 50, 310 118" stroke="#CDBFEA" stroke-width="2"/>
+                <path d="M10 118 C 60 64, 110 158, 160 101 S 260 62, 310 108" stroke="#7D55C7" stroke-width="3"/>
+                <g fill="#1a1a1a"><circle cx="40" cy="100" r="4"/><circle cx="100" cy="126" r="4"/><circle cx="160" cy="98" r="4"/><circle cx="220" cy="78" r="4"/><circle cx="280" cy="96" r="4"/></g>
+              </svg>
+            </div>
+            <div class="body">
+              <h3>Data assimilation</h3>
+              <p>Ensemble methods that blend numerical models with observations, applied to lakes and estuaries, the Martian atmosphere, and the electrical dynamics of the heart.</p>
+              <a class="more" href="../research.html">Read more</a>
+            </div>
+          </article>
+          <article class="card t3">
+            <div class="fig"><img src="../image_rgb.jpg" alt="AeroRIT hyperspectral scene of the RIT campus"></div>
+            <div class="body">
+              <h3>Remote sensing</h3>
+              <p>Hyperspectral imaging to detect and track vehicles from the air, including the open AeroRIT benchmark now used across the imaging community.</p>
+              <a class="more" href="../research.html">Read more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="pubs-wrap">
+      <section>
+        <div class="wrap">
+          <div class="sec-head"><h2>Selected publications</h2><a href="../pubs.html">All publications</a></div>
+          <ol class="pubs">
+            <li>
+              <div class="ptitle"><a href="https://iopscience.iop.org/article/10.1088/2515-7620/ae76df">How size-dependent settling can both bias and inform microplastics observations</a></div>
+              <div class="meta"><strong>M. J. Hoffman</strong> and M. H. DiBenedetto · <em>Environmental Research Communications</em> · 2026</div>
+              <p class="note">Shows how particle settling skews microplastic sampling, and how that bias can be turned into information.</p>
+            </li>
+            <li>
+              <div class="ptitle"><a href="https://iopscience.iop.org/article/10.1088/1748-9326/abecbd">Global simulations of marine plastic transport show plastic trapping in coastal zones</a></div>
+              <div class="meta">V. Onink, C. Jongedijk, <strong>M. J. Hoffman</strong>, E. van Sebille, and C. Laufkötter · <em>Environmental Research Letters</em> · 2021</div>
+              <p class="note">Most floating plastic stays trapped near coastlines rather than drifting to open-ocean garbage patches.</p>
+            </li>
+            <li>
+              <div class="ptitle"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0025326X20301429">Modeling the three-dimensional transport and distribution of multiple microplastic polymer types in Lake Erie</a></div>
+              <div class="meta">J. Daily and <strong>M. J. Hoffman</strong> · <em>Marine Pollution Bulletin</em> · 2020</div>
+              <p class="note">The first mass estimates of plastic throughout the water column and on the bottom of any of the Great Lakes.</p>
+            </li>
+            <li>
+              <div class="ptitle"><a href="https://ieeexplore.ieee.org/document/9079478">AeroRIT: A new scene for hyperspectral image analysis</a></div>
+              <div class="meta">A. Rangnekar, N. Mokashi, E. J. Ientilucci, C. Kanan, and <strong>M. J. Hoffman</strong> · <em>IEEE Trans. Geoscience and Remote Sensing</em> · 2020</div>
+              <p class="note">An openly released benchmark dataset now used across the hyperspectral imaging community.</p>
+            </li>
+            <li>
+              <div class="ptitle"><a href="https://www.sciencedirect.com/science/article/pii/S0025326X1630981X">Inventory and transport of plastic debris in the Laurentian Great Lakes</a></div>
+              <div class="meta"><strong>M. J. Hoffman</strong> and E. Hittinger · <em>Marine Pollution Bulletin</em> · 2017</div>
+              <p class="note">The first full-system plastic budget for the Great Lakes, estimating nearly 10,000 metric tons entering the lakes each year.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="sec-head"><h2>Collaborations</h2></div>
+        <div class="collab">
+          <a href="https://www.rit.edu/plasticpollution/"><img src="../COS_Collaborative_for_Plastics_and_the_Environment_cmyk_hor_k1__2_.png" alt="RIT Collaborative for Plastics and the Environment"></a>
+          <a href="https://thepelasticproject.com/"><img src="../pelastic_logo.png" alt="pELAstic Project"></a>
+          <a href="https://www.urmc.rochester.edu/environmental-medicine/lake-ontario-microplastics-center"><img src="../LOMP_Logo_no_background.png" alt="Lake Ontario Microplastics Center"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <div class="fname">Matthew J. Hoffman</div>
+        School of Mathematics and Statistics<br>Rochester Institute of Technology<br>85 Lomb Memorial Dr., Rochester, NY 14623
+      </div>
+      <div style="align-self:flex-end">&copy; 2026 · <a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a> · Photo by Traci Westcott</div>
+    </div>
+  </footer>
+</body>
+</html>
