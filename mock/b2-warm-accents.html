@@ -30,10 +30,10 @@
     .mock-flag { background: var(--warm); color: var(--muted); font-size: 13px; text-align: center; padding: 6px; }
 
     header { background: #fff; border-bottom: 1px solid var(--line); }
-    .bar { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 22px 0 18px; flex-wrap: wrap; }
+    .bar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0 18px; flex-wrap: wrap; }
     .name { font-family: var(--serif); font-size: 24px; color: var(--ink); text-decoration: none; }
     .name:hover { text-decoration: none; }
-    .role { font-size: 13.5px; color: var(--muted); margin-left: 14px; }
+    .role { display: block; font-size: 13.5px; color: var(--muted); margin-top: 2px; }
     nav { display: flex; gap: 26px; flex-wrap: wrap; }
     nav a { font-size: 15px; color: var(--text); padding-bottom: 4px; border-bottom: 2px solid transparent; }
     nav a:hover { text-decoration: none; color: var(--ink); border-bottom-color: var(--line); }
@@ -85,8 +85,8 @@
 
     .collab { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .collab a { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: flex; align-items: center; justify-content: center; min-height: 104px; }
-    .collab a:hover { border-color: var(--accent); }
-    .collab img { max-height: 60px; max-width: 100%; }
+    .collab img { max-height: 60px; max-width: 100%; filter: grayscale(1); opacity: 0.75; transition: filter .2s, opacity .2s; }
+    .collab a:hover img, .collab a:focus-visible img { filter: none; opacity: 1; }
 
     footer { background: #1c1b19; color: #CFCAC2; padding: 40px 0 48px; font-size: 14px; }
     footer .wrap { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
@@ -99,7 +99,6 @@
       .photo { order: -1; }
       .photo img { aspect-ratio: 4 / 3; }
       .themes, .collab { grid-template-columns: 1fr; }
-      .role { display: block; margin: 4px 0 0; }
       nav { gap: 14px; }
       nav a { font-size: 14px; }
       section { padding: 48px 0; }
@@ -111,7 +110,7 @@
 
   <header>
     <div class="wrap bar">
-      <div><a class="name" href="../index.html">Matthew J. Hoffman</a><span class="role">Professor of Applied Mathematics, RIT</span></div>
+      <div><a class="name" href="../index.html">Matthew J. Hoffman</a><span class="role">Professor, School of Mathematics and Statistics, Rochester Institute of Technology</span></div>
       <nav aria-label="Primary">
         <a href="b2-warm-accents.html" class="active">Home</a><a href="../about.html">About</a><a href="../research.html">Research</a><a href="../pubs.html">Publications</a><a href="../press.html">Press</a><a href="../docs/mhoffman-cv.pdf">CV</a>
       </nav>
