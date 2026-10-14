@@ -103,7 +103,7 @@ h1, h2 { font-family: var(--serif); font-weight: 400; color: var(--ink); }
 .contact { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; font-size: 15px; margin-bottom: 30px; }
 .contact dt { color: var(--muted); }
 .contact dd { color: var(--ink); }
-.hero .photo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; border-radius: 12px; display: block; }
+.hero .photo img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; border-radius: 12px; display: block; }
 
 .themes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
@@ -156,7 +156,7 @@ h2.plain-head:first-child { margin-top: 0; }
 
 /* About */
 .about { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: start; }
-.about figure img { width: 100%; border-radius: 12px; display: block; }
+.about figure img { width: 100%; height: auto; border-radius: 12px; display: block; }
 .profiles { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px 24px; }
 .profiles li { font-size: 16px; padding: 10px 0; border-top: 1px solid var(--line); }
 
