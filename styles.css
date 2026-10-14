@@ -116,9 +116,10 @@ h1, h2 { font-family: var(--serif); font-weight: 400; color: var(--ink); }
 .card p { font-size: 15px; line-height: 1.65; color: var(--text); flex: 1; margin-bottom: 14px; }
 .card .more { font-size: 15px; font-weight: 500; }
 
-.accent-cyan { --rule: var(--rit-cyan); }
-.accent-purple { --rule: var(--rit-purple); }
-.accent-gold { --rule: var(--rit-gold); }
+.accent-cyan { --rule: var(--rit-cyan); --num: #00677D; --tint: #E3F2F5; }
+.accent-purple { --rule: var(--rit-purple); --num: #5E3BA6; --tint: #EEE8F8; }
+.accent-gold { --rule: var(--rit-gold); --num: #7A5C00; --tint: #FDF3D0; }
+.accent-green { --rule: #84BD00; --num: #3F6A00; --tint: #ECF5DA; }
 
 .selected { list-style: none; }
 .selected li { padding: 22px 0; border-top: 1px solid var(--line); }
@@ -141,7 +142,9 @@ h1, h2 { font-family: var(--serif); font-weight: 400; color: var(--ink); }
 .page-head { background: #fff; border-bottom: 1px solid var(--line); }
 .page-head .wrap { padding-top: 48px; padding-bottom: 36px; }
 .page-head h1 { font-size: clamp(32px, 3.6vw, 42px); line-height: 1.15; }
-.jump { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 16px; font-size: 15px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; font-size: 14.5px; }
+.jump a { padding: 5px 13px; border-radius: 999px; background: var(--tint, var(--warm)); color: var(--num, var(--accent)); border: 1px solid transparent; }
+.jump a:hover { text-decoration: none; border-color: var(--rule, var(--line)); }
 .page-body { padding-top: 48px; padding-bottom: 72px; }
 
 .prose p { font-size: 17px; line-height: 1.75; margin-bottom: 18px; max-width: 40em; }
@@ -182,7 +185,7 @@ h2.plain-head:first-child { margin-top: 0; }
 .pub-list { padding-left: 2.4rem; margin-bottom: 8px; }
 .pub-list li { font-size: 15.5px; line-height: 1.7; padding: 14px 0 14px 6px; border-top: 1px solid var(--line); }
 .pub-list li:first-child { border-top: none; }
-.pub-list li::marker { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.pub-list li::marker { color: var(--num, var(--muted)); font-size: 14.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .pub-list strong { color: var(--ink); font-weight: 600; }
 
 /* Press */
