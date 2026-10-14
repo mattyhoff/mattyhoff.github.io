@@ -16,29 +16,33 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="site-header__name">Matthew J. Hoffman</div>
-    <div class="site-header__title">Professor &nbsp;·&nbsp; School of Mathematics &amp; Statistics &nbsp;·&nbsp; Rochester Institute of Technology</div>
+    <div class="wrap bar">
+      <div>
+        <a class="name" href="index.html">Matthew J. Hoffman</a>
+        <span class="role">Professor, School of Mathematics and Statistics, Rochester Institute of Technology</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="pubs.html">Publications</a>
+        <a href="press.html" aria-current="page">Press</a>
+        <a href="docs/mhoffman-cv.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="orange-rule"></div>
-
-  <nav class="site-nav" aria-label="Primary navigation">
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="pubs.html">Pubs</a>
-      <a href="press.html" class="active">Press</a>
-      <a href="docs/mhoffman-cv.pdf" target="_blank" rel="noopener">CV</a>
+  <main id="main">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Press &amp; Media</h1>
+      </div>
     </div>
-  </nav>
 
-  <main>
-    <div class="page-content">
-      <h1 class="page-title">Press &amp; Media</h1>
+    <div class="wrap page-body">
 
       <!-- Georgian Bay expansion -->
       <article class="media-card">
@@ -51,7 +55,7 @@
           <h2 class="media-card__title">Expanding Great Lakes Microplastics Research to Georgian Bay</h2>
           <p class="media-card__desc">RIT story on extending our mathematical modeling to Georgian Bay in Lake Huron, in collaboration with University of Michigan researchers, to map microplastic transport, fate, and ecological risk using methods developed through our Lake Ontario work.</p>
           <div class="media-card__links">
-            <a href="https://www.rit.edu/news/rit-professor-expands-great-lakes-microplastics-research-georgian-bay" target="_blank" rel="noopener" class="btn btn--filled">Read the Story</a>
+            <a href="https://www.rit.edu/news/rit-professor-expands-great-lakes-microplastics-research-georgian-bay" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Read the Story</a>
           </div>
         </div>
       </article>
@@ -67,7 +71,7 @@
           <h2 class="media-card__title">Tackling the Macro Problem of Microplastics</h2>
           <p class="media-card__desc">RIT feature on the university's interdisciplinary microplastics research team — including our modeling work — which has attracted nearly $10 million in funding since 2020.</p>
           <div class="media-card__links">
-            <a href="https://www.rit.edu/news/microplastics" target="_blank" rel="noopener" class="btn btn--filled">Read the Feature</a>
+            <a href="https://www.rit.edu/news/microplastics" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Read the Feature</a>
           </div>
         </div>
       </article>
@@ -82,8 +86,8 @@
           <h2 class="media-card__title">NOAA Marine Debris Funding &amp; NY Sea Grant Expansion</h2>
           <p class="media-card__desc">RIT was recommended for additional federal funding through the NOAA Marine Debris Program's Bipartisan Infrastructure Law investment to intercept stormwater debris before it reaches the Great Lakes, expanding our marine debris research and education work with NY Sea Grant.</p>
           <div class="media-card__links">
-            <a href="https://www.rit.edu/news/rit-recommended-additional-federal-funding-stormwater-debris-interception" target="_blank" rel="noopener" class="btn btn--filled">Stormwater Funding</a>
-            <a href="https://www.rit.edu/news/rit-and-ny-sea-grant-expand-marine-debris-and-plastic-pollution-research-and-education" target="_blank" rel="noopener" class="btn btn--ghost">NY Sea Grant Story</a>
+            <a href="https://www.rit.edu/news/rit-recommended-additional-federal-funding-stormwater-debris-interception" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Stormwater Funding</a>
+            <a href="https://www.rit.edu/news/rit-and-ny-sea-grant-expand-marine-debris-and-plastic-pollution-research-and-education" target="_blank" rel="noopener" class="btn btn--sm">NY Sea Grant Story</a>
           </div>
         </div>
       </article>
@@ -98,10 +102,10 @@
           <h2 class="media-card__title">Lake Ontario Microplastics Center Launch</h2>
           <p class="media-card__desc">RIT and the University of Rochester launched the Lake Ontario Center for Microplastics and Human Health in a Changing Environment with $7.3 million from NIEHS and NSF. I am a co-investigator, leading the physical transport and exposure modeling. Coverage included WXXI news and a Connections interview.</p>
           <div class="media-card__links">
-            <a href="https://www.rit.edu/news/new-microplastics-research-hub-aims-unravel-health-impact-changing-climate" target="_blank" rel="noopener" class="btn btn--filled">RIT Press Release</a>
-            <a href="https://www.urmc.rochester.edu/news/story/microplastics-research-hub-aims-to-unravel-health-impact-in-changing-climate" target="_blank" rel="noopener" class="btn btn--ghost">URMC Story</a>
-            <a href="https://www.wxxinews.org/local-news/2024-04-19/new-research-effort-seeks-to-tell-us-how-microplastics-get-into-lake-ontario-and-what-they-do-to-us" target="_blank" rel="noopener" class="btn btn--ghost">WXXI News</a>
-            <a href="https://www.wxxinews.org/show/connections/2024-04-22/humans-consume-about-a-credit-cards-worth-of-plastic-each-week-local-researchers-discuss-how-to-prevent-it" target="_blank" rel="noopener" class="btn btn--ghost">WXXI Connections</a>
+            <a href="https://www.rit.edu/news/new-microplastics-research-hub-aims-unravel-health-impact-changing-climate" target="_blank" rel="noopener" class="btn btn--solid btn--sm">RIT Press Release</a>
+            <a href="https://www.urmc.rochester.edu/news/story/microplastics-research-hub-aims-to-unravel-health-impact-in-changing-climate" target="_blank" rel="noopener" class="btn btn--sm">URMC Story</a>
+            <a href="https://www.wxxinews.org/local-news/2024-04-19/new-research-effort-seeks-to-tell-us-how-microplastics-get-into-lake-ontario-and-what-they-do-to-us" target="_blank" rel="noopener" class="btn btn--sm">WXXI News</a>
+            <a href="https://www.wxxinews.org/show/connections/2024-04-22/humans-consume-about-a-credit-cards-worth-of-plastic-each-week-local-researchers-discuss-how-to-prevent-it" target="_blank" rel="noopener" class="btn btn--sm">WXXI Connections</a>
           </div>
         </div>
       </article>
@@ -116,7 +120,7 @@
           <h2 class="media-card__title">Weather Events and Climate Trends</h2>
           <p class="media-card__desc">WXXI's Connections discussion on how recent weather events fit into the larger picture of climate and trends.</p>
           <div class="media-card__links">
-            <a href="https://www.wxxinews.org/show/connections/2023-02-14/how-do-recent-weather-events-fit-into-the-larger-picture-of-climate-and-trends" target="_blank" rel="noopener" class="btn btn--filled">Listen</a>
+            <a href="https://www.wxxinews.org/show/connections/2023-02-14/how-do-recent-weather-events-fit-into-the-larger-picture-of-climate-and-trends" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Listen</a>
           </div>
         </div>
       </article>
@@ -131,7 +135,7 @@
           <h2 class="media-card__title">Why Can't We Recycle More Plastic Products?</h2>
           <p class="media-card__desc">WXXI's Connections discussion on the limits of plastic recycling and what happens to plastic products after the bin.</p>
           <div class="media-card__links">
-            <a href="https://www.wxxinews.org/show/connections/2022-11-15/why-cant-we-recycle-more-plastic-products" target="_blank" rel="noopener" class="btn btn--filled">Listen</a>
+            <a href="https://www.wxxinews.org/show/connections/2022-11-15/why-cant-we-recycle-more-plastic-products" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Listen</a>
           </div>
         </div>
       </article>
@@ -146,7 +150,7 @@
           <h2 class="media-card__title">NOAA Funding: How Plastic Ends Up in the Great Lakes</h2>
           <p class="media-card__desc">RIT's press release on NOAA Marine Debris Program awards funding our interdisciplinary projects to understand and address how plastic ends up in the Great Lakes.</p>
           <div class="media-card__links">
-            <a href="https://www.rit.edu/news/researchers-receive-funding-research-and-address-how-plastic-ends-great-lakes" target="_blank" rel="noopener" class="btn btn--filled">Press Release</a>
+            <a href="https://www.rit.edu/news/researchers-receive-funding-research-and-address-how-plastic-ends-great-lakes" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Press Release</a>
           </div>
         </div>
       </article>
@@ -161,10 +165,10 @@
           <h2 class="media-card__title">3D Modeling of Plastic Pollution in Lake Erie</h2>
           <p class="media-card__desc">RIT's press release for our paper (led by Ph.D. student Juliette Daily) producing the first estimates of plastic pollution in the water column and deposited on the bottom of Lake Erie.</p>
           <div class="media-card__links">
-            <a href="https://www.rit.edu/news/rit-scientists-develop-first-3d-mass-estimate-microplastic-pollution-lake-erie" target="_blank" rel="noopener" class="btn btn--filled">Press Release</a>
-            <a href="https://www.cleveland.com/news/2020/05/rochester-institute-of-technology-estimates-381-tons-of-plastic-in-lake-erie-most-of-it-on-the-bottom.html" target="_blank" rel="noopener" class="btn btn--ghost">cleveland.com</a>
-            <a href="https://www.rochestercitynewspaper.com/rochester/how-much-plastic-is-in-the-great-lakes-tons-and-tons/Content?oid=11806379" target="_blank" rel="noopener" class="btn btn--ghost">Rochester City Paper</a>
-            <a href="https://www.rochesterfirst.com/news/local-news/lake-erie-has-50-times-more-plastic-pollution-at-the-lake-floor-than-at-the-surface/" target="_blank" rel="noopener" class="btn btn--ghost">WROC TV</a>
+            <a href="https://www.rit.edu/news/rit-scientists-develop-first-3d-mass-estimate-microplastic-pollution-lake-erie" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Press Release</a>
+            <a href="https://www.cleveland.com/news/2020/05/rochester-institute-of-technology-estimates-381-tons-of-plastic-in-lake-erie-most-of-it-on-the-bottom.html" target="_blank" rel="noopener" class="btn btn--sm">cleveland.com</a>
+            <a href="https://www.rochestercitynewspaper.com/rochester/how-much-plastic-is-in-the-great-lakes-tons-and-tons/Content?oid=11806379" target="_blank" rel="noopener" class="btn btn--sm">Rochester City Paper</a>
+            <a href="https://www.rochesterfirst.com/news/local-news/lake-erie-has-50-times-more-plastic-pollution-at-the-lake-floor-than-at-the-surface/" target="_blank" rel="noopener" class="btn btn--sm">WROC TV</a>
           </div>
         </div>
       </article>
@@ -180,7 +184,7 @@
           <h2 class="media-card__title"><a href="https://rochmanlab.com/the-pelastic-project/" target="_blank" rel="noopener">pELAstic Project</a></h2>
           <p class="media-card__desc">Wired discussed the start of our project at the IISD Experimental Lakes Area studying the presence and effects of plastic pollution in lakes.</p>
           <div class="media-card__links">
-            <a href="https://www.wired.com/story/remote-lakes-microplastic/" target="_blank" rel="noopener" class="btn btn--filled">Read on Wired</a>
+            <a href="https://www.wired.com/story/remote-lakes-microplastic/" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Read on Wired</a>
           </div>
         </div>
       </article>
@@ -196,7 +200,7 @@
           <h2 class="media-card__title">Tons of Plastic Trash Enter the Great Lakes Every Year — Where Does It Go?</h2>
           <p class="media-card__desc">I wrote this plain-language explainer of our Great Lakes plastic research for <em>The Conversation</em>, walking through where the roughly 10,000 tons of plastic entering the lakes each year ends up.</p>
           <div class="media-card__links">
-            <a href="https://theconversation.com/tons-of-plastic-trash-enter-the-great-lakes-every-year-where-does-it-go-100423" target="_blank" rel="noopener" class="btn btn--filled">Read on The Conversation</a>
+            <a href="https://theconversation.com/tons-of-plastic-trash-enter-the-great-lakes-every-year-where-does-it-go-100423" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Read on The Conversation</a>
           </div>
         </div>
       </article>
@@ -204,23 +208,20 @@
       <!-- Plastic Pollution in the Great Lakes -->
       <article class="media-card">
         <div class="media-card__thumb">
-          <iframe width="190" height="140"
-                  src="https://www.youtube.com/embed/aanFq5yP29g"
-                  frameborder="0" allowfullscreen
-                  title="Plastic Pollution in the Great Lakes video"></iframe>
+          <iframe src="https://www.youtube.com/embed/aanFq5yP29g" allowfullscreen loading="lazy" title="Plastic Pollution in the Great Lakes video"></iframe>
         </div>
         <div class="media-card__body">
           <div class="media-card__date">December 19, 2016</div>
           <h2 class="media-card__title">Plastic Pollution in the Great Lakes</h2>
           <p class="media-card__desc">RIT's press release for our paper (with Eric Hittinger at RIT) producing the first estimates of plastic pollution entering and floating in the Great Lakes — approximately 10,000 metric tons per year. A <a href="docs/Hoffman_plastic_MPB_preprint.pdf">preprint</a> is available and simulations are on the <a href="research.html">Research</a> page.</p>
           <div class="media-card__links">
-            <a href="http://www.rit.edu/news/story.php?id=58860" target="_blank" rel="noopener" class="btn btn--filled">Press Release</a>
-            <a href="http://www.huffingtonpost.com/entry/great-lakes-plastic_us_586502c0e4b0de3a08f73d20" target="_blank" rel="noopener" class="btn btn--ghost">Huffington Post</a>
-            <a href="http://wgnradio.com/2016/12/27/mike-stephen-great-lakes-plastic-pollution-study-by-matthew-hoffman-of-rit-12-27-16/" target="_blank" rel="noopener" class="btn btn--ghost">WGN Radio</a>
-            <a href="http://wxxinews.org/post/study-tons-plastic-getting-great-lakes" target="_blank" rel="noopener" class="btn btn--ghost">WXXI</a>
-            <a href="http://ottawacitizen.com/news/local-news/rochester-scientist-counts-the-plastics-in-great-lakes" target="_blank" rel="noopener" class="btn btn--ghost">Ottawa Citizen</a>
-            <a href="https://weather.com/news/news/great-lakes-plastic-pollution-michigan" target="_blank" rel="noopener" class="btn btn--ghost">weather.com</a>
-            <a href="http://www.duluthnewstribune.com/news/4184733-great-lakes-get-22-million-pounds-plastics-annually" target="_blank" rel="noopener" class="btn btn--ghost">Duluth News Tribune</a>
+            <a href="http://www.rit.edu/news/story.php?id=58860" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Press Release</a>
+            <a href="http://www.huffingtonpost.com/entry/great-lakes-plastic_us_586502c0e4b0de3a08f73d20" target="_blank" rel="noopener" class="btn btn--sm">Huffington Post</a>
+            <a href="http://wgnradio.com/2016/12/27/mike-stephen-great-lakes-plastic-pollution-study-by-matthew-hoffman-of-rit-12-27-16/" target="_blank" rel="noopener" class="btn btn--sm">WGN Radio</a>
+            <a href="http://wxxinews.org/post/study-tons-plastic-getting-great-lakes" target="_blank" rel="noopener" class="btn btn--sm">WXXI</a>
+            <a href="http://ottawacitizen.com/news/local-news/rochester-scientist-counts-the-plastics-in-great-lakes" target="_blank" rel="noopener" class="btn btn--sm">Ottawa Citizen</a>
+            <a href="https://weather.com/news/news/great-lakes-plastic-pollution-michigan" target="_blank" rel="noopener" class="btn btn--sm">weather.com</a>
+            <a href="http://www.duluthnewstribune.com/news/4184733-great-lakes-get-22-million-pounds-plastics-annually" target="_blank" rel="noopener" class="btn btn--sm">Duluth News Tribune</a>
           </div>
         </div>
       </article>
@@ -236,7 +237,7 @@
           <h2 class="media-card__title">The Science of Drought</h2>
           <p class="media-card__desc">WXXI's monthly science roundtable discussion about the science of drought and the role of climate change.</p>
           <div class="media-card__links">
-            <a href="http://wxxinews.org/post/connections-monthly-science-roundtable-science-drought" target="_blank" rel="noopener" class="btn btn--filled">Listen</a>
+            <a href="http://wxxinews.org/post/connections-monthly-science-roundtable-science-drought" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Listen</a>
           </div>
         </div>
       </article>
@@ -252,7 +253,7 @@
           <h2 class="media-card__title">Sports Statistics</h2>
           <p class="media-card__desc">I joined Brian Koberlein's podcast to discuss the use of advanced statistics in ice hockey and other sports.</p>
           <div class="media-card__links">
-            <a href="https://briankoberlein.com/podcast/episode027/" target="_blank" rel="noopener" class="btn btn--filled">Listen</a>
+            <a href="https://briankoberlein.com/podcast/episode027/" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Listen</a>
           </div>
         </div>
       </article>
@@ -268,7 +269,7 @@
           <h2 class="media-card__title">Math as Science / Theory and Law</h2>
           <p class="media-card__desc">Is math a science? What is the difference between a theory and a law? I was on Brian Koberlein's podcast to discuss these questions.</p>
           <div class="media-card__links">
-            <a href="https://briankoberlein.com/podcast/episode015/" target="_blank" rel="noopener" class="btn btn--filled">Listen</a>
+            <a href="https://briankoberlein.com/podcast/episode015/" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Listen</a>
           </div>
         </div>
       </article>
@@ -284,7 +285,7 @@
           <h2 class="media-card__title">Great Pacific Garbage Patch / Age of the Universe</h2>
           <p class="media-card__desc">I was a guest on the podcast One Universe at a Time to discuss plastic pollution in the global ocean and how astronomers determine the age of the universe.</p>
           <div class="media-card__links">
-            <a href="https://briankoberlein.com/podcast/episode001/" target="_blank" rel="noopener" class="btn btn--filled">Listen</a>
+            <a href="https://briankoberlein.com/podcast/episode001/" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Listen</a>
           </div>
         </div>
       </article>
@@ -299,7 +300,7 @@
           <h2 class="media-card__title">PiRIT Pi Day Pie Contest</h2>
           <p class="media-card__desc">RIT news covered the Pi Day Pie Baking contest run by the RIT Math Club (PiRIT), which I advise. They highlighted my pie that year. Full disclosure: neither pie won.</p>
           <div class="media-card__links">
-            <a href="https://youtu.be/vZUZybmTF50" target="_blank" rel="noopener" class="btn btn--filled">Watch</a>
+            <a href="https://youtu.be/vZUZybmTF50" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Watch</a>
           </div>
         </div>
       </article>
@@ -307,39 +308,31 @@
       <!-- Math at RIT -->
       <article class="media-card">
         <div class="media-card__thumb">
-          <iframe width="190" height="140"
-                  src="https://www.youtube.com/embed/QM5UoH9QYgA"
-                  frameborder="0" allowfullscreen
-                  title="Math at RIT video"></iframe>
+          <iframe src="https://www.youtube.com/embed/QM5UoH9QYgA" allowfullscreen loading="lazy" title="Math at RIT video"></iframe>
         </div>
         <div class="media-card__body">
           <div class="media-card__date">June 10, 2014</div>
           <h2 class="media-card__title">Math at RIT</h2>
           <p class="media-card__desc">This video about the applied and computational math program at RIT features me in front of a class as well as discussing student research.</p>
           <div class="media-card__links">
-            <a href="https://youtu.be/QM5UoH9QYgA" target="_blank" rel="noopener" class="btn btn--filled">Watch</a>
+            <a href="https://youtu.be/QM5UoH9QYgA" target="_blank" rel="noopener" class="btn btn--solid btn--sm">Watch</a>
           </div>
         </div>
       </article>
 
-    </div>
+        </div>
   </main>
 
   <footer class="site-footer">
-    <p>Pie photo by A. Sue Weisler</p>
-    <p>&copy; 2025 Matthew J. Hoffman &nbsp;&middot;&nbsp; All Rights Reserved &nbsp;&middot;&nbsp;
-       <a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a></p>
+    <div class="wrap">
+      <div>
+        <div class="fname">Matthew J. Hoffman</div>
+        School of Mathematics and Statistics<br>
+        Rochester Institute of Technology<br>
+        2302 Gosnell Hall, 85 Lomb Memorial Dr., Rochester, NY 14623
+      </div>
+      <div class="fmeta">&copy; 2026 Matthew J. Hoffman &nbsp;&middot;&nbsp; <a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a> &nbsp;&middot;&nbsp; Pie photo by A. Sue Weisler</div>
+    </div>
   </footer>
-
-  <script>
-    (function () {
-      var btn = document.getElementById('nav-toggle');
-      var links = document.getElementById('nav-links');
-      btn.addEventListener('click', function () {
-        var open = links.classList.toggle('open');
-        btn.setAttribute('aria-expanded', String(open));
-      });
-    })();
-  </script>
 </body>
 </html>

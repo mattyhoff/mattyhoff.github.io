@@ -16,29 +16,34 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="site-header__name">Matthew J. Hoffman</div>
-    <div class="site-header__title">Professor &nbsp;·&nbsp; School of Mathematics &amp; Statistics &nbsp;·&nbsp; Rochester Institute of Technology</div>
+    <div class="wrap bar">
+      <div>
+        <a class="name" href="index.html">Matthew J. Hoffman</a>
+        <span class="role">Professor, School of Mathematics and Statistics, Rochester Institute of Technology</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="pubs.html" aria-current="page">Publications</a>
+        <a href="press.html">Press</a>
+        <a href="docs/mhoffman-cv.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="orange-rule"></div>
-
-  <nav class="site-nav" aria-label="Primary navigation">
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="pubs.html" class="active">Pubs</a>
-      <a href="press.html">Press</a>
-      <a href="docs/mhoffman-cv.pdf" target="_blank" rel="noopener">CV</a>
+  <main id="main">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Publications</h1>
+        <nav class="jump" aria-label="Publication types"><a href="#journal">Journal papers</a><a href="#peer-reviewed-conference">Peer-reviewed conference papers</a><a href="#book-chapters">Book chapters</a><a href="#commentary">Commentary and popular press</a><a href="#conference">Conference papers</a></nav>
+      </div>
     </div>
-  </nav>
 
-  <main>
-    <div class="page-content">
-      <h1 class="page-title">Publications</h1>
+    <div class="wrap page-body">
 
       <p>Full record:
         <a href="https://scholar.google.com/citations?user=64_fAxoAAAAJ" target="_blank" rel="noopener">Google Scholar</a> &nbsp;·&nbsp;
@@ -47,7 +52,7 @@
       </p>
 
       <!-- ── Journal Papers ── -->
-      <div class="section-heading">Journal Papers</div>
+      <h2 class="plain-head" id="journal">Journal papers</h2>
       <ol reversed class="pub-list">
         <li>Marcotte, C. D., <strong>M. J. Hoffman</strong>, F. H. Fenton, and E. M. Cherry (2026). Strongly and weakly coupled data assimilation for reconstruction of three-dimensional synthetic and experimental cardiac electrical excitation states with sparse observations. <em>Chaos</em>, 36 (10), 103120. DOI: 10.1063/5.0335582 [<a href="https://pubs.aip.org/aip/cha/article/36/10/103120/3406398/Strongly-and-weakly-coupled-data-assimilation-for" target="_blank" rel="noopener">Publisher Link</a>]</li>
 
@@ -149,7 +154,7 @@
       </ol>
 
       <!-- ── Peer-Reviewed Conference Papers ── -->
-      <div class="section-heading">Peer-Reviewed Conference Papers</div>
+      <h2 class="plain-head" id="peer-reviewed-conference">Peer-reviewed conference papers</h2>
       <ol reversed class="pub-list">
         <li>Rangnekar, A., C. Kanan, and <strong>M. J. Hoffman</strong> (2023). Semantic Segmentation with Active Supervised Learning. <em>2023 IEEE/CVF Winter Conference on Applications of Computer Vision</em>. [<a href="https://openaccess.thecvf.com/content/WACV2023/papers/Rangnekar_Semantic_Segmentation_With_Active_Semi-Supervised_Learning_WACV_2023_paper.pdf" target="_blank" rel="noopener">Publisher Link</a>]</li>
 
@@ -189,7 +194,7 @@
       </ol>
 
       <!-- ── Book Chapters ── -->
-      <div class="section-heading">Book Chapters</div>
+      <h2 class="plain-head" id="book-chapters">Book chapters</h2>
       <ol reversed class="pub-list">
         <li><strong>Hoffman, M.J.</strong>, J. Daily, and A.C. Tyler (2025). Plastic input, transport, and fate in the ocean. In: Shumway, S.E. and J.E. Ward (eds) <em>Plastics in the Sea: Occurrence and Impacts</em>. Academic Press, pp. 137–160. doi:10.1016/B978-0-12-822324-6.00013-X [<a href="https://www.sciencedirect.com/science/chapter/edited-volume/pii/B978012822324600013X" target="_blank" rel="noopener">Publisher Link</a>]</li>
 
@@ -197,13 +202,13 @@
       </ol>
 
       <!-- ── Commentary / Popular Press ── -->
-      <div class="section-heading">Commentary / Popular Press</div>
+      <h2 class="plain-head" id="commentary">Commentary and popular press</h2>
       <ol reversed class="pub-list">
         <li><strong>Hoffman, M.J.</strong> and A.C. Tyler (2018). <a href="https://theconversation.com/tons-of-plastic-trash-enter-the-great-lakes-every-year-where-does-it-go-100423" target="_blank" rel="noopener">Tons of plastic trash enter the Great Lakes every year — where does it go?</a> <em>The Conversation.</em></li>
       </ol>
 
       <!-- ── Conference Papers ── -->
-      <div class="section-heading">Conference Papers</div>
+      <h2 class="plain-head" id="conference">Conference papers</h2>
       <ol reversed class="pub-list">
         <li>H. Li, L. Pan, Z. Li, <strong>M. J. Hoffman</strong>, A. Vodacek, and S. S. Bhattacharyya (2018). Design methods for hyperspectral video processing on resource-constrained platforms. <em>Proceedings of the Hyperspectral Imaging &amp; Applications Conference</em>, pp. 2, October 2018.</li>
 
@@ -212,23 +217,19 @@
         <li>Uzkent, B., <strong>M. J. Hoffman</strong>, E. Cherry, and N. Cahill (2014). 3-D MRI Cardiac Segmentation using Graph Cuts. <em>Proc. IEEE Western New York Image Processing Workshop</em>, pp. 47–51. DOI: 10.1109/WNYIPW.2014.6999484 [<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6999484" target="_blank" rel="noopener">Publisher Link</a>]</li>
       </ol>
 
-    </div>
+        </div>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Matthew J. Hoffman &nbsp;&middot;&nbsp; All Rights Reserved &nbsp;&middot;&nbsp;
-       <a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a></p>
+    <div class="wrap">
+      <div>
+        <div class="fname">Matthew J. Hoffman</div>
+        School of Mathematics and Statistics<br>
+        Rochester Institute of Technology<br>
+        2302 Gosnell Hall, 85 Lomb Memorial Dr., Rochester, NY 14623
+      </div>
+      <div class="fmeta">&copy; 2026 Matthew J. Hoffman &nbsp;&middot;&nbsp; <a href="mailto:mjhsma@rit.edu">mjhsma@rit.edu</a></div>
+    </div>
   </footer>
-
-  <script>
-    (function () {
-      var btn = document.getElementById('nav-toggle');
-      var links = document.getElementById('nav-links');
-      btn.addEventListener('click', function () {
-        var open = links.classList.toggle('open');
-        btn.setAttribute('aria-expanded', String(open));
-      });
-    })();
-  </script>
 </body>
 </html>
